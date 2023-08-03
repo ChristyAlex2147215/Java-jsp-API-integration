@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+    <display-name>sample</display-name>
+
+    <!-- Define the Login servlet -->
+    <!-- 1st servlet -->
+    
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>sample.Login</servlet-class>
+    </servlet>
+
+    <!-- Map the Login servlet to the URL pattern /Login -->
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <!-- Define the GetTable servlet -->
+     <!-- 2st servlet -->
+     
+    <servlet>
+        <servlet-name>GetTable</servlet-name>
+        <servlet-class>sample.GetTable</servlet-class>
+    </servlet>
+
+    <!-- Map the GetTable servlet to the URL pattern /GetTable -->
+    <servlet-mapping>
+        <servlet-name>GetTable</servlet-name>
+        <url-pattern>/GetTable</url-pattern>
+    </servlet-mapping>
+    
+     <!-- 3rd servlet -->
+     
+    <servlet>
+        <servlet-name>AddNew</servlet-name>
+        <servlet-class>sample.AddNew</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddNew</servlet-name>
+        <url-pattern>/AddNew</url-pattern>
+    </servlet-mapping>
+    
+
+    
+</web-app>
